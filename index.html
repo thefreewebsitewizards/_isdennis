@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayfair Car Rentals - Premium Luxury Vehicles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MAYFAIR</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#fleet" class="nav-link">Fleet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">DRIVE MAYFAIR.<br>DRIVE PREMIUM.</h1>
+                <p class="hero-subtitle">Experience luxury with Mayfair Car Rentals - your premier destination for Land Cruisers, Toyota Prados, and elite vehicles.</p>
+                <button class="cta-button">Book Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="car-showcase">
+                    <div class="car-silhouette"></div>
+                </div>
+            </div>
+
+               
+            </div>
+        </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Mayfair Car Rentals</h2>
+                    <p class="about-description">
+                        Mayfair Car Rentals is your premier destination for luxury vehicle rentals. Our exclusive fleet features top-of-the-line Land Cruisers, Toyota Prados, and other premium automobiles designed to deliver an exceptional driving experience. With years of expertise in the luxury car rental industry, Mayfair provides unmatched service quality and vehicle reliability.
+                    </p>
+                    <p class="about-description">
+                        Whether it's a business meeting, special occasion, or adventure getaway, we provide more than just transportation – we deliver an experience of uncompromising quality and style.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Premium Cars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title center">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3 class="service-title">Daily Rentals</h3>
+                    <p class="service-description">Flexible daily rental options for short-term needs. Perfect for business trips, city exploration, or special events.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Long-Term Rentals</h3>
+                    <p class="service-description">Extended rental packages with competitive rates. Ideal for extended stays, relocations, or long-term projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="service-title">Airport Transfers</h3>
+                    <p class="service-description">Seamless airport pickup and drop-off services. Arrive in style with our premium fleet and professional service.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="service-title">Chauffeur Services</h3>
+                    <p class="service-description">Professional chauffeur-driven experiences. Sit back, relax, and enjoy the journey with our expert drivers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2 class="section-title center">Our Premium Fleet</h2>
+            <div class="fleet-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/land_cruiser1.jpg" alt="Toyota Land Cruiser">
+                                <img class="car-image-slide" src="images/land_cruiser2.png" alt="Toyota Land Cruiser">
+                                <img class="car-image-slide" src="images/land_cruiser3.heic" alt="Toyota Land Cruiser">
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Land Cruiser</h3>
+                        <p class="car-description">Ultimate off-road luxury SUV for adventures and family trips.</p>
+                        <div class="car-features">
+                            <span class="feature">8 Seats</span>
+                            <span class="feature">4WD</span>
+                            <span class="feature">Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/toyota_prado.jpg" alt="Toyota Prado">
+                                <img class="car-image-slide" src="images/toyota_prado1.jpg" alt="Toyota Prado">
+                           
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Prado</h3>
+                        <p class="car-description">Sophisticated SUV combining comfort with rugged capability.</p>
+                        <div class="car-features">
+                            <span class="feature">7 Seats</span>
+                            <span class="feature">4WD</span>
+                            <span class="feature">Luxury</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/mercedes.heic" alt="Toyota Camry">
+                                <img class="car-image-slide" src="images/mercedes1.heic" alt="Toyota Camry">
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mercedes Benz</h3>
+                        <p class="car-description">Epitome of luxury and engineering excellence for special occasions.</p>
+                        <div class="car-features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Luxury</span>
+                            <span class="feature">Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/camry.heic" alt="Toyota Camry">
+                                <img class="car-image-slide" src="images/camry2.heic" alt="Toyota Camry">
+                                <img class="car-image-slide" src="images/camry3.heic" alt="Toyota Camry">
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Camry</h3>
+                        <p class="car-description">Elegant sedan perfect for business meetings and city driving.</p>
+                        <div class="car-features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Hybrid</span>
+                            <span class="feature">Executive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/nissan_.jpg" alt="Nissan Quest">
+                                <img class="car-image-slide" src="images/nissan2.jpg" alt="Nissan Quest">
+                                <div class="car-placeholder">
+                                    <i class="fas fa-shuttle-van"></i>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Nissan Quest</h3>
+                        <p class="car-description">Spacious minivan ideal for group travel and family adventures.</p>
+                        <div class="car-features">
+                            <span class="feature">8 Seats</span>
+                            <span class="feature">Family</span>
+                            <span class="feature">Comfort</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/pickup.jpg" alt="Premium Pickup">
+                                <img class="car-image-slide" src="images/pickup1.heic" alt="Premium Pickup">
+                                <img class="car-image-slide" src="images/pickup2.heic" alt="Premium Pickup">
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Premium Pickups</h3>
+                        <p class="car-description">Powerful trucks for work, adventure, and heavy-duty transportation.</p>
+                        <div class="car-features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">4WD</span>
+                            <span class="feature">Heavy Duty</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/hiace.heic" alt="Toyota Hiace">
+                                <img class="car-image-slide" src="images/hiace1.png" alt="Toyota Hiace">
+                        
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Hiace</h3>
+                        <p class="car-description">Spacious van ideal for group travel and family adventures.</p>
+                        <div class="car-features">
+                            <span class="feature">15 Seats</span>
+                            <span class="feature">Family</span>
+                            <span class="feature">Comfort</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <div class="car-carousel">
+                            <div class="carousel-container">
+                                <img class="car-image-slide active" src="images/lexus.png" alt="Lexus">
+                                <img class="car-image-slide" src="images/lexus1.png" alt="Lexus">
+                            </div>
+                            <button class="carousel-btn prev-btn" onclick="changeImage(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="changeImage(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Lexus</h3>
+                        <p class="car-description">Ultimate luxury experience with cutting-edge technology and comfort.</p>
+                        <div class="car-features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Luxury</span>
+                            <span class="feature">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Booking Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2 class="section-title">Book Your Premium Ride</h2>
+                    <form class="booking-form" id="bookingForm" action="https://www.instagram.com/may.fairrentals/" method="get" target="_blank">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="car" name="car" required>
+                                <option value="">Select Desired Car</option>
+                                <option value="land-cruiser">Toyota Land Cruiser</option>
+                                <option value="prado">Toyota Prado</option>
+                                <option value="mercedes">Mercedes Benz</option>
+                                <option value="camry">Toyota Camry</option>
+                                <option value="quest">Nissan Quest</option>
+                                <option value="pickup">Premium Pickup</option>
+                                <option value="lexus">Lexus</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="pickup-date" name="pickup-date" placeholder="Pickup Date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="return-date" name="return-date" placeholder="Return Date" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Book Now</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@isdennisrentals.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Premium Drive, Luxury City, LC 12345</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><a href="#home" class="footer-brand-link">Mayfair Car Rentals</a></h3>
+                    <p>Premium cars for every occasion. Drive luxury, comfort, and performance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fleet">Fleet</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                          <a href="https://www.instagram.com/may.fairrentals/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.facebook.com/profile.php?id=61568421097009&ref=pl_edit_xav_ig_profile_page_web#" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                      </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mayfair Car Rentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImage(button, direction) {
+            const carousel = button.parentElement;
+            const container = carousel.querySelector('.carousel-container');
+            const images = container.querySelectorAll('.car-placeholder, .car-image-slide');
+            let currentIndex = 0;
+            
+            // Find current active image
+            images.forEach((img, index) => {
+                if (img.classList.contains('active')) {
+                    currentIndex = index;
+                }
+            });
+            
+            // Remove active class from current image
+            images[currentIndex].classList.remove('active');
+            
+            // Calculate new index
+            let newIndex = currentIndex + direction;
+            if (newIndex >= images.length) {
+                newIndex = 0;
+            } else if (newIndex < 0) {
+                newIndex = images.length - 1;
+            }
+            
+            // Add active class to new image
+            images[newIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
