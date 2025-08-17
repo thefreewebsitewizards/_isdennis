@@ -814,12 +814,6 @@ p {
     }
 }
 
-@media (min-width: 1400px) {
-    .fleet-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 /* Smooth Animations */
 .fade-in {
     opacity: 0;
